@@ -82,7 +82,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "pqSignalAdaptorCompositeTreeWidget.h"
 #include "pqSignalAdaptors.h"
 #include "pqSignalAdaptorTreeWidget.h"
-#include "pqSpreadsheetViewModel.h"
+#include "pqSpreadSheetViewModel.h"
 #include "pqSMAdaptor.h"
 #include "pqTreeWidgetSelectionHelper.h"
 
