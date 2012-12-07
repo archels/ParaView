@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>460</width>
-    <height>934</height>
+    <width>474</width>
+    <height>1167</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -19,12 +19,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout">
+  <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <layout class="QGridLayout">
-     <property name="spacing">
-      <number>3</number>
-     </property>
+    <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0">
       <widget class="QLabel" name="label_6">
        <property name="text">
@@ -32,13 +29,33 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
+     <item row="0" column="1" colspan="2">
       <widget class="pqOutputPortComboBox" name="currentObject"/>
      </item>
-     <item row="1" column="0" colspan="2">
+     <item row="1" column="0">
       <widget class="QPushButton" name="createSelection">
        <property name="text">
         <string>Create Selection</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="extractSelection">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Extract Selection</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="extractOverTime">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Extract Over Time</string>
        </property>
       </widget>
      </item>
@@ -293,7 +310,7 @@
              </widget>
             </item>
             <item>
-             <layout class="QGridLayout">
+             <layout class="QGridLayout" name="IDEditButtonsLayout">
               <property name="spacing">
                <number>2</number>
               </property>
@@ -742,6 +759,43 @@
          </widget>
         </item>
        </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="pqCollapsedGroup" name="groupBox">
+     <property name="title">
+      <string>Selected entities</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="margin">
+       <number>3</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="pqSpreadSheetViewWidget" name="spreadsheet">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>120</height>
+         </size>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::NoSelection</enum>
+        </property>
+       </widget>
       </item>
      </layout>
     </widget>
@@ -1605,6 +1659,11 @@
    <class>pqOutputPortComboBox</class>
    <extends>QComboBox</extends>
    <header>pqOutputPortComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>pqSpreadSheetViewWidget</class>
+   <extends>QTableView</extends>
+   <header>pqSpreadSheetViewWidget.h</header>
   </customwidget>
  </customwidgets>
  <tabstops>

@@ -222,6 +222,25 @@
    </property>
   </action>
 
+  <!-- Non-menu action used by selection inspector. -->
+  <action name="actionSelnReaction">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Selection editor...</string>
+   </property>
+   <property name="toolTip">
+    <string>Inspect and edit the selection</string>
+   </property>
+   <property name="shortcut">
+   <string/>
+   </property>
+  </action>
+
   <addaction name="actionMoveMode" />
   <addaction name="actionSelectionMode" />
   <addaction name="actionSelectSurfacePoints" />

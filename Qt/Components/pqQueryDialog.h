@@ -7,8 +7,8 @@
    All rights reserved.
 
    ParaView is a free software; you can redistribute it and/or modify it
-   under the terms of the ParaView license version 1.2. 
-   
+   under the terms of the ParaView license version 1.2.
+
    See License_v1.2.txt for the full ParaView license.
    A copy of this license can be obtained by contacting
    Kitware Inc.
@@ -29,7 +29,7 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ========================================================================*/
-#ifndef __pqQueryDialog_h 
+#ifndef __pqQueryDialog_h
 #define __pqQueryDialog_h
 
 #include <QDialog>
@@ -73,14 +73,8 @@ signals:
   void helpRequested();
 
 protected slots:
-  /// Must be triggered before server disconnect to release all SMProxy links
-  void freeSMProxy();
-
   /// Triggered when the data to process has changed
   void onSelectionChange(pqOutputPort*);
-
-  /// Triggerd when the active view has changed
-  void onActiveViewChanged(pqView*);
 
   /// Based on the data type produced by the producer, this will update the
   /// options in the selection type combo-box.
@@ -95,11 +89,8 @@ protected slots:
   /// Called when user click the "Run Query" button.
   void runQuery();
 
-  /// Called when user selects a label item.
-  void setLabel(int index);
-
   void onExtractSelection()
-    { 
+    {
     this->extractSelection();
     this->accept();
     }
@@ -108,16 +99,6 @@ protected slots:
     this->extractSelectionOverTime();
     this->accept();
     }
-
-protected:
-  /// populate the list of available labels.
-  void updateLabels();
-
-  /// link the label-color widget with the active label-color property.
-  void linkLabelColorWidget(vtkSMProxy*, const QString& propname);
-
-  /// creates the proxies needed for the spreadsheet view.
-  void setupSpreadSheet();
 
 private:
   Q_DISABLE_COPY(pqQueryDialog)

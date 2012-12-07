@@ -35,6 +35,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "pqRubberBandHelper.h"
 #include "pqActiveObjects.h"
 #include "pqDataQueryReaction.h"
+#include "pqSelectionReaction.h"
 
 #include <QActionGroup>
 
@@ -133,8 +134,11 @@ void pqSelectionToolbar::constructor()
     SIGNAL(selectionFinished(int, int, int, int)),
     this->SelectionHelper, SLOT(endSelection()));
 
+  // Reaction for "Find data" toolbar button.
   new pqDataQueryReaction(ui.actionQuery);
-  ui.actionQuery->setEnabled(true);
+
+  // Set up "extract selection" buttons in selection inspector dialog.
+  new pqSelectionReaction(ui.actionSelnReaction);
 }
 
 //-----------------------------------------------------------------------------
