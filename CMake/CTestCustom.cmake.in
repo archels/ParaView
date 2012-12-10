@@ -24,7 +24,7 @@ set (CTEST_CUSTOM_WARNING_EXCEPTION
   "qt_plugin_instance_"
 
   # Nested Qt foreach loops produce this warning:
-  "warning: declaration of ['_]*container[_']* shadows a previous local"
+  "warning: declaration of ?_container_? shadows a previous local"
 
   "vtk[^\\.]+ClientServer.cxx"
 

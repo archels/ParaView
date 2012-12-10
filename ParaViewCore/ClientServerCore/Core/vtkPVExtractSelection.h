@@ -20,9 +20,9 @@
 // extracted dataset.
 //
 // \li Output port 1 -- is a vtkSelection consisting of indices of the cells/points
-// extracted. If vtkSelection used as the input to this filter is of the field
+// extracted. If the vtkSelection instance used as the input to this filter is of the field
 // type vtkSelection::CELL, then the output vtkSelection has both the cell
-// indicides as well as point indices of the cells/points that were extracted.
+// indices as well as point indices of the cells/points that were extracted.
 // If input field type is vtkSelection::POINT, then the output vtkSelection only
 // has the indicies of the points that were extracted.
 // This second output is useful for correlating particular
