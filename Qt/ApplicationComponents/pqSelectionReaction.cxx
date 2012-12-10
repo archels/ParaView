@@ -88,8 +88,10 @@ pqSelectionInspectorPanel* pqSelectionReaction::findInspector()
 
   if (qApp)
     {
-    foreach (QWidget* widg, qApp->topLevelWidgets())
+    int ntop = static_cast<int>(qApp->topLevelWidgets().size());
+    for (int i = 0; i < ntop; ++i)
       {
+      QWidget* widg = qApp->topLevelWidgets().at(i);
       foreach (inspector, widg->findChildren<pqSelectionInspectorPanel*>())
         {
         return inspector;

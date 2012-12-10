@@ -72,6 +72,10 @@ SET (TESTS_WITH_BASELINES
   ${CMAKE_CURRENT_SOURCE_DIR}/CategoricalColorScalarBar1.xml
   ${CMAKE_CURRENT_SOURCE_DIR}/ComparativeVisPanel.xml
   ${CMAKE_CURRENT_SOURCE_DIR}/CompositeSurfaceSelection.xml
+  ${CMAKE_CURRENT_SOURCE_DIR}/ConvertSelnCellFrustumToID.xml
+  ${CMAKE_CURRENT_SOURCE_DIR}/ConvertSelnCellGlobIDToID.xml
+  ${CMAKE_CURRENT_SOURCE_DIR}/ConvertSelnCellPickToGlobID.xml
+  ${CMAKE_CURRENT_SOURCE_DIR}/ConvertSelnPointPickToGlobID.xml
   ${CMAKE_CURRENT_SOURCE_DIR}/Contour.xml
   ${CMAKE_CURRENT_SOURCE_DIR}/ContourRange.xml
   ${CMAKE_CURRENT_SOURCE_DIR}/CreateDelete.xml
@@ -220,6 +224,19 @@ set(Clip_USE_NEW_PANELS TRUE)
 set(ColorEditor2_USE_NEW_PANELS TRUE)
 set(ColorEditor4_USE_NEW_PANELS TRUE)
 set(CompositeSurfaceSelection_USE_NEW_PANELS TRUE)
+set(ConvertSelnCellFrustumToID_USE_NEW_PANELS TRUE)
+set(ConvertSelnCellFrustumToID_BREAK TRUE)
+  # Break between selection conversion tests to Force reset of global selection state.
+set(ConvertSelnCellGlobIDToID_USE_NEW_PANELS TRUE)
+set(ConvertSelnCellGlobIDToID_BREAK TRUE)
+set(ConvertSelnCellGlobIDToID_DISABLE_CS TRUE) # no selection labels with client server
+set(ConvertSelnCellGlobIDToID_DISABLE_CRS TRUE) # no selection with render server
+set(ConvertSelnCellPickToGlobID_USE_NEW_PANELS TRUE)
+set(ConvertSelnCellPickToGlobID_BREAK TRUE)
+set(ConvertSelnCellPickToGlobID_DISABLE_CRS TRUE) # no selection with render server
+set(ConvertSelnPointPickToGlobID_BREAK TRUE)
+set(ConvertSelnPointPickToGlobID_USE_NEW_PANELS TRUE)
+set(ConvertSelnPointPickToGlobID_DISABLE_CRS TRUE) # no selection with render server
 set(ContourRange_USE_NEW_PANELS TRUE)
 set(Contour_USE_NEW_PANELS TRUE)
 set(CreateDelete_USE_NEW_PANELS TRUE)

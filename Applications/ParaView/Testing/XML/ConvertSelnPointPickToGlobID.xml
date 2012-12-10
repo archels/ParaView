@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<pqevents>
+  <pqevent object="pqClientMainWindow/MainControlsToolbar/actionOpenData" command="activate" arguments="" />
+  <pqevent object="pqClientMainWindow/FileOpenDialog" command="filesSelected" arguments="$PARAVIEW_DATA_ROOT/Data/can.ex2" />
+  <pqevent object="pqClientMainWindow/centralwidget/MultiViewWidget/CoreWidget/qt_tabwidget_stackedwidget/MultiViewWidget1/Frame.0/Viewport" command="mouseMove" arguments="(0.137931,0.303371,1,0,0)" />
+  <pqevent object="pqClientMainWindow/centralwidget/MultiViewWidget/CoreWidget/qt_tabwidget_stackedwidget/MultiViewWidget1/Frame.0/Viewport" command="mouseRelease" arguments="(0.137931,0.303371,1,0,0)" />
+  <pqevent object="pqClientMainWindow/propertiesDock/propertiesPanel/scrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/PropertiesFrame/ProxyPanel/ArrayStatus/SelectionWidget/1QHeaderView0" command="mousePress" arguments="1,1,0,0,0,0" />
+  <pqevent object="pqClientMainWindow/propertiesDock/propertiesPanel/scrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/PropertiesFrame/ProxyPanel/ArrayStatus/SelectionWidget/1QHeaderView0" command="mouseRelease" arguments="1,0,0,0,0,0" />
+  <pqevent object="pqClientMainWindow/propertiesDock/propertiesPanel/scrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/PropertiesFrame/ProxyPanel/ArrayStatus/SelectionWidget/1QHeaderView0" command="mouseDblClick" arguments="1,1,0,0,0,0" />
+  <pqevent object="pqClientMainWindow/propertiesDock/propertiesPanel/scrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/PropertiesFrame/ProxyPanel/ArrayStatus/SelectionWidget/1QHeaderView0" command="mouseRelease" arguments="1,0,0,0,0,0" />
+  <pqevent object="pqClientMainWindow/propertiesDock/propertiesPanel/scrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/PropertiesFrame/ProxyPanel/ArrayStatus/SelectionWidget/1QHeaderView0" command="mousePress" arguments="1,1,0,0,0,0" />
+  <pqevent object="pqClientMainWindow/propertiesDock/propertiesPanel/scrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/PropertiesFrame/ProxyPanel/ArrayStatus/SelectionWidget/1QHeaderView0" command="mouseRelease" arguments="1,0,0,0,0,0" />
+  <pqevent object="pqClientMainWindow/propertiesDock/propertiesPanel/scrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/PropertiesFrame/ProxyPanel/ArrayStatus/SelectionWidget" command="setCheckState" arguments="1.0,2" />
+  <pqevent object="pqClientMainWindow/propertiesDock/propertiesPanel/scrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/PropertiesFrame/ProxyPanel/ArrayStatus/SelectionWidget" command="setCheckState" arguments="3.0,2" />
+  <pqevent object="pqClientMainWindow/propertiesDock/propertiesPanel/Accept" command="activate" arguments="" />
+  <pqevent object="pqClientMainWindow/currentTimeToolbar/CurrentTimeIndex" command="set_int" arguments="5" />
+  <pqevent object="pqClientMainWindow/currentTimeToolbar/CurrentTimeIndex" command="key" arguments="16777220" />
+  <pqevent object="pqClientMainWindow/cameraToolbar/actionNegativeY" command="activate" arguments="" />
+  <pqevent object="pqClientMainWindow/selectionToolbar/actionSelectSurfacePoints" command="set_boolean" arguments="true" />
+  <pqevent object="pqClientMainWindow/centralwidget/MultiViewWidget/CoreWidget/qt_tabwidget_stackedwidget/MultiViewWidget1/Frame.0/Viewport" command="mousePress" arguments="(0.501232,0.599251,1,1,0)" />
+  <pqevent object="pqClientMainWindow/centralwidget/MultiViewWidget/CoreWidget/qt_tabwidget_stackedwidget/MultiViewWidget1/Frame.0/Viewport" command="mouseMove" arguments="(0.509852,0.608614,1,0,0)" />
+  <pqevent object="pqClientMainWindow/centralwidget/MultiViewWidget/CoreWidget/qt_tabwidget_stackedwidget/MultiViewWidget1/Frame.0/Viewport" command="mouseRelease" arguments="(0.509852,0.608614,1,0,0)" />
+  <pqevent object="pqClientMainWindow/menubar" command="activate" arguments="menu_View" />
+  <pqevent object="pqClientMainWindow/menubar/menu_View" command="activate" arguments="Selection Inspector" />
+  <pqevent object="pqClientMainWindow/axesToolbar/actionShowCenterAxes" command="set_boolean" arguments="false" />
+  <pqevent object="pqClientMainWindow/selectionInspectorDock/selectionInspector/scrollArea/qt_scrollarea_viewport/scrollWidget/groupActiveSelection/comboSelectionType" command="set_string" arguments="Global Node IDs" />
+  <pqevent object="pqClientMainWindow/selectionInspectorDock/selectionInspector/scrollArea/qt_scrollarea_vcontainer/1QScrollBar0" command="mousePress" arguments="1,1,0,5,314" />
+  <pqevent object="pqClientMainWindow/selectionInspectorDock/selectionInspector/scrollArea/qt_scrollarea_vcontainer/1QScrollBar0" command="mouseRelease" arguments="1,0,0,5,314" />
+  <pqevent object="pqClientMainWindow/selectionInspectorDock/selectionInspector/scrollArea/qt_scrollarea_viewport/scrollWidget/groupSelectionLabel" command="mousePress" arguments="1,1,0,271,19" />
+  <pqevent object="pqClientMainWindow/selectionInspectorDock/selectionInspector/scrollArea/qt_scrollarea_viewport/scrollWidget/groupSelectionLabel" command="mouseRelease" arguments="1,0,0,271,19" />
+  <pqevent object="pqClientMainWindow/selectionInspectorDock/selectionInspector/scrollArea/qt_scrollarea_viewport/scrollWidget/groupSelectionLabel/tabWidget_SelectionLabelStyle/qt_tabwidget_tabbar" command="set_tab_with_text" arguments="Point Label" />
+  <pqevent object="pqClientMainWindow/selectionInspectorDock/selectionInspector/scrollArea/qt_scrollarea_viewport/scrollWidget/groupSelectionLabel/tabWidget_SelectionLabelStyle/qt_tabwidget_stackedwidget/tab_PointLabel/checkBoxLabelPoints" command="set_boolean" arguments="true" />
+  <pqevent object="pqClientMainWindow/representationToolbar/displayRepresentation/comboBox" command="set_string" arguments="Outline" />
+  <pqevent object="pqClientMainWindow/selectionInspectorDock/selectionInspector/scrollArea/qt_scrollarea_viewport/scrollWidget/groupSelectionLabel/tabWidget_SelectionLabelStyle/qt_tabwidget_stackedwidget/tab_PointLabel/frame_PointLabelStyle/buttonColor_Point" command="setChosenColor" arguments="255,255,255" />
+</pqevents>

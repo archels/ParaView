@@ -237,8 +237,10 @@ void pqQueryDialog::runQuery()
   // Bring up the selection inspector if it is not already visible:
   if (qApp)
     {
-    foreach (QWidget* widg, qApp->topLevelWidgets())
+    int ntop = static_cast<int>(qApp->topLevelWidgets().size());
+    for (int i = 0; i < ntop; ++i)
       {
+      QWidget* widg = qApp->topLevelWidgets().at(i);
       foreach (pqSelectionInspectorPanel* inspector, widg->findChildren<pqSelectionInspectorPanel*>())
         {
         inspector->parentWidget()->show();
