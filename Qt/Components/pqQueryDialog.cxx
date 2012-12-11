@@ -243,8 +243,11 @@ void pqQueryDialog::runQuery()
       QWidget* widg = qApp->topLevelWidgets().at(i);
       foreach (pqSelectionInspectorPanel* inspector, widg->findChildren<pqSelectionInspectorPanel*>())
         {
-        inspector->parentWidget()->show();
-        return;
+        if (inspector && inspector->parentWidget())
+          {
+          inspector->parentWidget()->show();
+          return;
+          }
         }
       }
     }
